@@ -9,7 +9,9 @@ ARG MONGOTOOLS_URL="https://fastdl.mongodb.org/tools/db/mongodb-database-tools-u
 RUN wget ${MONGOTOOLS_URL}
 RUN apt install ./mongodb-database-tools-*.deb && rm ./mongodb-database-tools-*.deb
 
-RUN git clone https://github.com/NiiWiiCamo/docker-mongocloud-backup.git /backupper
+RUN git clone https://github.com/NiiWiiCamo/docker-mongodb-backupper.git /backupper
+
+RUN crontab -u abc /backupper/cronfile
 
 ENV MONGODB_DATABASE="database"
 ENV MONGODB_USER="admin"
