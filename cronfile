@@ -1,0 +1,2 @@
+# m h  dom mon dow   command
+30 11 * * 2 /bin/bash /backupper/clouddb-backup.sh
