@@ -9,8 +9,8 @@ ARG MONGOTOOLS_URL="https://fastdl.mongodb.org/tools/db/mongodb-database-tools-u
 RUN wget ${MONGOTOOLS_URL}
 RUN apt install ./mongodb-database-tools-*.deb && rm ./mongodb-database-tools-*.deb
 
-ADD cronfile /backupper
-ADD clouddb-backup.sh /backupper
+ADD cronfile /backupper/cronfile
+ADD clouddb-backup.sh /backupper/clouddb-backup.sh
 
 RUN crontab -u abc /backupper/cronfile
 
