@@ -19,6 +19,7 @@ Based on linuxserver/baseimage-ubuntu with s6-overlay.
 | ----- | ----- |
 | /config | optional volume for ssh keys to import |
 
+### Environment variables
 | ENV | Default | Description |
 | ----- | ----- | ----- |
 | PUID | 911 | User ID to run the container with |
