@@ -16,10 +16,11 @@ Based on linuxserver/baseimage-ubuntu with s6-overlay.
 
 ### Volumes
 | /data | output for backups, subfolder per database |
+| ----- | ----- |
 | /config | optional volume for ssh keys to import |
 
 | ENV | Default | Description |
-| ---------- | ----- | ----- |
+| ----- | ----- | ----- |
 | PUID | 911 | User ID to run the container with |
 | PGID | 1000 | Group ID |
 | TZ | GMT | Timezone |
