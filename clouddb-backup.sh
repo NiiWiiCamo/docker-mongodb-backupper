@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # backup folder
-BASEDIR="/data"
+BASEDIR="/data/${GIT_REPONAME}"
 TARGETDIR="${BASEDIR}/${MONGODB_DATABASE}_$(date +%F_%T)"
 
 # create subdir
