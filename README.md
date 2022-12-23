@@ -11,7 +11,7 @@ Based on linuxserver/baseimage-ubuntu with s6-overlay.
 ### Tested scenario
 - MonoDB Atlas free instance
 - GitHub private repo, auth via ed25519 key
-- local repo gets cleaned up before each dump
+- local repo gets cleaned up before each dump (unsure)
 - versioning should only persist in repo
 
 ### Volumes
